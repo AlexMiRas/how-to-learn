@@ -1,31 +1,447 @@
+a {
+    color: #2f80ed;
+}
+
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-width: 1100px;
+    max-width: 1600px;
+    font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+
+    /* блок header */
+
 }
 
 .header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 600px;
+    max-height: 756px;
+    position: relative;
+    /* Если элементы должны быть выровнены абсолютно родителя - то родителю нужно написать position: relative */
+    overflow: hidden;
+    /* не позволяем фигуре переходить на другой блок */
+
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__background_grey{
+    background-color: #f2f2f2;
+}
+
+.logo__place_header{
+    background-image: url(../images/logo_place_header.svg);
+    position: absolute;
+    width: 183px;
+    height: 32px;
+    margin: 30px 64px auto;
+    position: absolute;
+    z-index: 99;
+}
+
+.header__title {
+    font-size: 102px;
+    font-weight: bold;
+    width: 730px;
+    align-self: center;
+    margin-left: 64px;
+    height: 98px;
+    z-index: 98;
+}
+
+
+.header__subtitle {
+    font-size: 18px;
+    height: 25px;
+    width: 388px;
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    z-index: 97;
+
+}
+
+.header__link{
+    text-decoration: none;
+}
+
+.header__main-illustration {
+    background-image: url(../images/header-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: right;
+    width: 765px;
+    height: 608px;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+
+}
+
 .header__square-pic {
-  height: 568px;
-  width: 568px;
+    background-color: #2f80ed;
+    width: 568px;
+    height: 568px;
+    right: 0;
+    top: 64px;
+    position: absolute;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+/* Блок description */
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.two-columns__brief {
+    width: 175px;
+    font-size: 18px;
+    height: 1.2;
+}
+
+.two-columns__main-text {
+    width: 80%;
+    min-width: 784px;
+    line-height: 34px;
+    /* высота строки */
+}
+
+.two-columns__paragraph {
+    margin: 30px 0;
+    font-size: 24px;
+
+}
+
+.two-columns__span-accent {
+    font-weight: bold;
+}
+
+/* Блок digits */
+
+.digits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-title {
+    margin-top: 100px;
+    width: 60%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.15;
+
+}
+
+.section-subtitle {
+    margin-top: 20px;
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.table {
+    margin: 60px auto 100px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sub_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.table__cell {
+    width: 250px;
+
+}
+
+.table__heading {
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.table__text {
+    top: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+
+/* Блок Feynman */
+
+
+.feynman {
+    display: flex;
+    height: 890px;
+    flex-direction: column;
+    position: relative;
+    /* Если элементы должны быть выровнены абсолютно родителя - то родителю нужно написать position: relative */
+    background-image: url(../images/feynman.png);
+    /* если в блоке картинка задается фоном через css, и мы хотим вырвать её из потока "absolute", то её место 
+    в контейнере задается через background-position. Другой вариант в html - тег img, тогда в блоке картинки 
+    ставим "position absolute" и там же указываем её место с помощью top, left и так далее*/
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.feynman__title {
+    width: 648px;
+    z-index: 1;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    margin: 100px 0 70px;
+
+}
+
+.feynman__title_h2 {
+    text-align: center;
+}
+
+.feynman__subtitle {
+    font-size: 36px;
+    line-height: 51px;
+}
+
+.feynman__link {
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    font-size: 36px;
+    line-height: 51px;
+    t
+
+}
+
+.feynman__link_underline{
+    text-decoration: none;
+}
+
+.feynman__image {
+
+    /* если через backgroung-image - то без position absolute. Если через тег img, то через position absolute */
+    width: 637px;
+    height: 867px;
+
+}
+
+/* Блок kaufman */
+
+.kaufman {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.section-title__theme_dark {
+    width: 60%;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.15;
+    margin: 90px auto 20px;
+    color: white;
+    
+}
+
+.section-subtable__theme_dark {
+    width: 60%;
+    margin-bottom: 80px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    
+}
+
+.table__theme_dark {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    width:80%;
+
+}
+
+.table__dark_row_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    z-index: 3;
+
+}
+
+.table__dark_row_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+    z-index: 3;
+
+}
+
+.table__cell_theme_dark{
+    width: 200px;
+}
+
+.table__heading_theme_dark {
+    width: 200px;
+    margin-bottom: 20px;
+    font-size:24px;
+    line-height:1.15;
+}
+
+.table__text_theme_dark{
+    font-size: 18px;
+    line-height:1.2;
+}
+
+.kaufman__triangle {
+    background-image: url(../images/kaufman-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    width: 877px;
+    height:877px;
+    right:-210px;
+    z-index: 1;
+    
+    
+}
+
+/* footer */
+
+.footer {
+    min-height: 350px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    
+}
+
+.footer__background_black{
+    background-color: #1f1f1f;
+}
+
+
+.footer__columns {
+    display:flex;
+    flex-direction:row;
+    position: relative;
+    width:90%;
+    justify-content: space-between;
+    
+}
+
+.footer__column_content_copyright {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    justify-content: space-between;
+    flex-basis: 711px;
+}
+
+.logo__place_footer {
+    background-image: url(../images/logo_place_footer.svg);
+    width: 183px;
+    height: 35px;
+}
+
+.footer__author {
+    margin: 18px 0;
+    line-height: 25px;
+    font-size:18px;
+}
+
+.footer__column-heading {
+    line-height: 30px;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.footer__column-link {
+    line-height:30px;
+    font-size:18px;
+    margin: 20px 0 16px;
+}
+
+.column-social {
+    display:flex;
+    flex-direction:column;
+}
+
+.footer__column_social_value {
+    display:flex;
+    flex-direction:row;
+}
+
+.footer__social-icon {
+    display:flex;
+    flex-direction:row;
+    width:16px;
+    height:16px;
+    justify-content: space-between;
+}
+
+.footer__social-icon_paragraph {
+    margin-top: 28px;
+}
+
+.footer__social-icon_facebook {
+    margin:0 10px 0 0;
+    background-image: url(../images/facebook_color_white.svg);
+
+}
+
+.footer__social-icon_VK{
+    margin:0 10px 0 0;
+   background-image:url(../images/vk_color_white.svg); 
+}
+
+.footer__social-icon_instagram{
+    margin:0 10px 16px 0;
+    background-image:url(../images/instagram_color_white.svg);
+}
+
+.theme_dark_color-text {
+    color: white;
+}
+
+.footer__link_color{
+    color:white;
+    text-decoration:none;
+}
+
+.background__grey {
+    background-color: #f2f2f2;
+}
+
+.background__black {
+    background-color: #1f1f1f;
 }
