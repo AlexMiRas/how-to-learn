@@ -68,11 +68,13 @@ a {
     background-repeat: no-repeat;
     background-position: bottom;
     background-position: right; исправление на тег <img>
-    width: 765px;
-    height: 608px;*/
+    */
     right: 0;
     z-index: 3;
     position: absolute;
+    /* width:765px;
+    height:608px; */
+    
 
 }
 
@@ -433,6 +435,7 @@ a {
     color: white;
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    list-style: none;
     
 }
 
