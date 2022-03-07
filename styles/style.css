@@ -1,5 +1,6 @@
 a {
     color: #2f80ed;
+    text-decoration: none;
 }
 
 .page {
@@ -21,12 +22,10 @@ a {
     /* Если элементы должны быть выровнены абсолютно родителя - то родителю нужно написать position: relative */
     overflow: hidden;
     /* не позволяем фигуре переходить на другой блок */
-
-}
-
-.header__background_grey{
     background-color: #f2f2f2;
+
 }
+
 
 .logo__place_header{
     background-image: url(../images/logo_place_header.svg);
@@ -64,13 +63,13 @@ a {
 }
 
 .header__main-illustration {
-    background-image: url(../images/header-image.png);
+    /*background-image: url(../images/header-image.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-position: right;
+    background-position: right; исправление на тег <img>
     width: 765px;
-    height: 608px;
+    height: 608px;*/
     right: 0;
     z-index: 3;
     position: absolute;
@@ -93,36 +92,43 @@ a {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: 0;
 }
 
 .two-columns {
     display: flex;
     flex-direction: row;
     width: 80%;
+    min-width: 784px;
     justify-content: space-between;
 }
 
 .two-columns__brief {
     width: 175px;
-   
+    font-size: 18px;
     height: 1.2;
+    color: #2f80ed;
+    margin: 0;
+    font-weight: lighter;
 }
 
-.two-columns__brief_h2{
+/* .two-columns__brief_h2{
     font-size: 18px;
-}
+} */
 
 .two-columns__main-text {
     width: 80%;
     min-width: 784px;
-    line-height: 34px;
-    /* высота строки */
+    line-height: 34px;  /* высота строки */
 }
 
 .two-columns__paragraph {
-    margin: 30px 0;
+   
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 24px;
 
+    
 }
 
 .two-columns__span-accent {
@@ -142,15 +148,15 @@ a {
     margin-top: 100px;
     width: 60%;
     text-align: center;
-    
+    font-size: 60px;
     font-weight: bold;
     line-height: 1.15;
 
 }
 
-.section-title_h2{
+/* .section-title_h2{
     font-size: 60px;
-}
+} */
 
 .section-subtitle {
     margin-top: 20px;
@@ -164,15 +170,16 @@ a {
     margin: 60px auto 100px;
     width: 1100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap:wrap;
 
 }
 
-.sub_table {
+/* .sub_table {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
+} */
 
 .table__cell {
     width: 250px;
@@ -201,35 +208,43 @@ a {
     flex-direction: column;
     position: relative;
     /* Если элементы должны быть выровнены абсолютно родителя - то родителю нужно написать position: relative */
-    background-image: url(../images/feynman.png);
-    /* если в блоке картинка задается фоном через css, и мы хотим вырвать её из потока "absolute", то её место 
+    /* перенес в нтмл в тег <img> 
+    background-image: url(../images/feynman.png); */
+
+    /*если в блоке картинка задается фоном через css, и мы хотим вырвать её из потока "absolute", то её место 
     в контейнере задается через background-position. Другой вариант в html - тег img, тогда в блоке картинки 
     ставим "position absolute" и там же указываем её место с помощью top, left и так далее*/
-    background-repeat: no-repeat;
-    background-position: bottom left;
 
-    align-items: center;
+    /* background-repeat: no-repeat;
+    background-position: bottom left;*/
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    left:0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .feynman__title {
     width: 648px;
-    z-index: 1;
+    z-index: 3;
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
     margin: 100px 0 70px;
-
-}
-
-.feynman__title_h2 {
     text-align: center;
+
 }
+
+/* .feynman__title_h2 {
+    text-align: center;
+} */
 
 .feynman__subtitle {
     font-size: 36px;
     line-height: 51px;
+    z-index:3;
 }
 
 .feynman__link {
@@ -242,16 +257,19 @@ a {
 
 }
 
-.feynman__link_underline{
+/* .feynman__link_underline{
     text-decoration: none;
-}
+} перенес с описанние тега <a> */
 
 .feynman__image {
 
     /* если через backgroung-image - то без position absolute. Если через тег img, то через position absolute */
-    width: 637px;
-    height: 867px;
-
+    /* width: 637px;
+    height: 867px; */
+    position:absolute;
+    z-index:1;
+    left:0;
+    bottom:0;
 }
 
 /* Блок kaufman */
@@ -264,10 +282,11 @@ a {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #1f1f1f;
     
 }
 
-.section-title__theme_dark {
+.section-title__title_theme_dark {
     width: 60%;
     text-align: center;
     font-size: 60px;
@@ -277,16 +296,17 @@ a {
     
 }
 
-.section-subtable__theme_dark {
+.section-subtable__article_theme_dark {
     width: 60%;
     margin-bottom: 80px;
     font-size: 24px;
     line-height: 34px;
     text-align: center;
+    color: white;
     
 }
 
-.table__theme_dark {
+.table_theme_dark {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -313,18 +333,19 @@ a {
 
 }
 
-.table__cell_theme_dark{
+.table__table-cell__cell_theme_dark{
     width: 200px;
+    color: white;
 }
 
-.table__heading_theme_dark {
+.table__table-heading__heading_theme_dark {
     width: 200px;
     margin-bottom: 20px;
     font-size:24px;
     line-height:1.15;
 }
 
-.table__text_theme_dark{
+.table__table-text__text_theme_dark{
     font-size: 18px;
     line-height:1.2;
 }
@@ -348,12 +369,14 @@ a {
     min-height: 350px;
     padding: 60px 40px;
     box-sizing: border-box;
+    background-color: #1f1f1f;
     
 }
 
-.footer__background_black{
+/* .footer__background_black{
     background-color: #1f1f1f;
-}
+    перенесено в .footer
+} */
 
 
 .footer__columns {
@@ -362,7 +385,7 @@ a {
     position: relative;
     width:90%;
     justify-content: space-between;
-    
+    margin: 60px auto 40px;
 }
 
 .footer__column_content_copyright {
@@ -373,7 +396,7 @@ a {
     flex-basis: 711px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
     background-image: url(../images/logo_place_footer.svg);
     width: 183px;
     height: 35px;
@@ -383,6 +406,7 @@ a {
     margin: 18px 0;
     line-height: 25px;
     font-size:18px;
+    color: white;
 }
 
 .footer__column-heading {
@@ -390,12 +414,26 @@ a {
     font-size:18px;
     font-weight:bold;
     margin-bottom:20px;
+    color: white;
+   
 }
 
+.footer__column-links{
+    
+    display:flex;
+    flex-direction: column;
+    padding:0; /* убираем отступ у тега ol в .footer__column-link и прижимаем их к левому краю */
+    }
+
 .footer__column-link {
+    
     line-height:30px;
     font-size:18px;
-    margin: 20px 0 16px;
+    margin-bottom: 16px;
+    color: white;
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    
 }
 
 .column-social {
@@ -436,9 +474,9 @@ a {
     background-image:url(../images/instagram_color_white.svg);
 }
 
-.theme_dark_color-text {
+/* .theme_dark_color-text {
     color: white;
-}
+} */
 
 .footer__link_color{
     color:white;
@@ -449,6 +487,9 @@ a {
     background-color: #f2f2f2;
 }
 
+/* 
 .background__black {
+
     background-color: #1f1f1f;
 }
+*/
