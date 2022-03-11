@@ -22,9 +22,7 @@
     min-height: 600px;
     max-height: 756px;
     position: relative;
-    /* Если элементы должны быть выровнены абсолютно родителя - то родителю нужно написать position: relative */
     overflow: hidden;
-    /* не позволяем фигуре переходить на другой блок */
     background-color: #f2f2f2;
 
 }
@@ -61,17 +59,7 @@
 
 }
 
-/* .header__link{
-    перенесено в свойства all-link
-} */
-
 .header__main-illustration {
-    /*background-image: url(../images/header-image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position: right; исправление на тег <img>
-    */
     right: 0;
     z-index: 3;
     position: absolute;
@@ -115,16 +103,11 @@
     font-weight: lighter;
 }
 
-/* .two-columns__brief_h2{
-    font-size: 18px;
-} */
-
 .two-columns__main-text {
     width: 80%;
     min-width: 784px;
     line-height: 34px;
-    /* высота строки */
-
+    
 }
 
 .two-columns__paragraph {
@@ -142,7 +125,7 @@
 
 .two-columns__span-accent {
     font-weight: bold;
-    /*   margin:30px 0 30px; эти оступы регулируются теперь псевдоклассами  */
+   
 }
 
 /* Блок digits */
@@ -165,10 +148,6 @@
 
 }
 
-/* .section-title_h2{
-    font-size: 60px;
-} */
-
 .section-subtitle {
 
     width: 60%;
@@ -187,12 +166,6 @@
     justify-content: center;
 
 }
-
-/* .sub_table {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-} */
 
 .table__cell {
     width: 250px;
@@ -222,16 +195,6 @@
     height: 890px;
     flex-direction: column;
     position: relative;
-    /* Если элементы должны быть выровнены абсолютно родителя - то родителю нужно написать position: relative */
-    /* перенес в нтмл в тег <img> 
-    background-image: url(../images/feynman.png); */
-
-    /*если в блоке картинка задается фоном через css, и мы хотим вырвать её из потока "absolute", то её место 
-    в контейнере задается через background-position. Другой вариант в html - тег img, тогда в блоке картинки 
-    ставим "position absolute" и там же указываем её место с помощью top, left и так далее*/
-
-    /* background-repeat: no-repeat;
-    background-position: bottom left;*/
     background-color: #f2f2f2;
     padding: 0;
     left: 0;
@@ -251,10 +214,6 @@
 
 }
 
-/* .feynman__title_h2 {
-    text-align: center;
-} */
-
 .feynman__subtitle {
     font-size: 36px;
     line-height: 51px;
@@ -272,13 +231,8 @@
 
 }
 
-/* .feynman__link_underline{
-    text-decoration: none;
-} перенес с описанние тега <a> */
-
 .feynman__image {
 
-    /* если через backgroung-image - то без position absolute. Если через тег img, то через position absolute */
     width: 867px;
     height: 637px;
     position: absolute;
@@ -298,7 +252,6 @@
     padding: 0;
     overflow: hidden;
     background-color: #1f1f1f;
-
 
 }
 
@@ -336,24 +289,6 @@
 
 }
 
-/* .table_theme_dark_row_1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 80px;
-    z-index: 3;
-
-}
-
-.table_theme_dark_row_2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 90px;
-    z-index: 3;
-
-}
-*/
 .cell_theme_dark {
     margin: 80px 0px 0px;
     width: 200px;
@@ -386,9 +321,7 @@
     width: 877px;
     height: 877px;
     right: -210px;
-    z-index: 1;
-
-
+   
 }
 
 /* footer */
@@ -399,14 +332,8 @@
     background-color: #1f1f1f;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 60px 40px; /* размеры закладываем через padding и свойства box-sizing, чтобы при высоте 350px соблюдалась заложенная брифом размерность блока footer */
-
+    padding: 60px 40px; 
 }
-
-/* .footer__background_black{
-    background-color: #1f1f1f;
-    перенесено в .footer
-} */
 
 
 .footer__columns {
@@ -485,11 +412,6 @@
 
 }
 
-/* .column-social {
-    display:flex;
-    flex-direction:column;
-}*/
-
 .footer__column-list {
     
     display: flex;
@@ -497,7 +419,6 @@
     justify-content: flex-start;
     align-items: baseline;
     padding-left: 0;
-    /* сдвигаю элементы списка влево, убираю отступ */
     margin: 0px 0px 16px;
 }
 
@@ -510,13 +431,6 @@
     margin-bottom: 16px;
 }
 
-/* .footer__column_social_value {border:rgb(255, 0, 140) 3px solid;
-    margin:0;
-    padding: 0;
-    
-    
-} */
-
 .footer__social-icon {
     width: 16px;
     height: 16px;
@@ -525,113 +439,7 @@
 
 
 
-/* .theme_dark_color-text {
-    color: white;
-} */
-
-
-
 .background__grey {
     background-color: #f2f2f2;
 }
 
-/* 
-.background__black {
-
-    background-color: #1f1f1f;
-}
-*/
-
-
-/* резервный код 
-.footer__column_info{
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    }
-
-.footer__column-heading {
-    line-height: 30px;
-    font-size:18px;
-    font-weight:bold;
-    margin: 0px auto 20px;
-    color: white;
-    
-}
-
-.footer__column_content_social{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.footer__column-links{
-    
-    display:flex;
-    flex-direction: column;
-    margin:0px;
-    padding:0; /* убираем отступ у тега ol в .footer__column-link и прижимаем их к левому краю 
-}
-
-.footer__column-link {
-    
-    line-height:30px;
-    font-size:18px;
-    margin-bottom: 16px;
-    color: white;
-    margin-left: 0; /* Отступ слева в браузере IE и Opera 
-    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome 
-    list-style: none;
-    
-}
-
-.column-social {
-    display:flex;
-    flex-direction:column;
-}
-
-.footer__column_social_value {
-    display:flex;
-    flex-direction:row;
-}
-
-.footer__social-icon {
-    display:flex;
-    flex-direction:row;
-    width:16px;
-    height:16px;
-    justify-content: space-between;
-}
-
-.footer__social-icon_paragraph {
-    margin-top: 18px;
-}
-
-.footer__social-icon_facebook {
-    margin:0 10px 0 0;
-    background-image: url(../images/facebook_color_white.svg);
-
-}
-
-.footer__social-icon_VK{
-    margin:0 10px 0 0;
-   background-image:url(../images/vk_color_white.svg); 
-}
-
-.footer__social-icon_instagram{
-    margin:0 10px 16px 0;
-    background-image:url(../images/instagram_color_white.svg);
-}
-
-/* .theme_dark_color-text {
-    color: white;
-} 
-
-.footer__link_color{
-    color:white;
-    text-decoration:none;
-}
-
-.background__grey {
-    background-color: #f2f2f2;
-} */
