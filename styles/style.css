@@ -1,3 +1,8 @@
+h1, h2, h3, h4, a, p, ul, li {
+    margin:0;
+    padding:0;
+}
+
 .all-link {
     color: #2f80ed;
     text-decoration: none;
@@ -21,8 +26,9 @@
     flex-wrap: wrap;
     min-height: 600px;
     max-height: 756px;
+    height:100vh;
     position: relative;
-    overflow: hidden;
+    
     background-color: #f2f2f2;
 
 }
@@ -61,6 +67,7 @@
 
 .header__main-illustration {
     right: 0;
+    bottom:0;
     z-index: 3;
     position: absolute;
     width: 765px;
