@@ -8,6 +8,12 @@ h1, h2, h3, h4, a, p, ul, li {
     text-decoration: none;
 }
 
+.font-container_font_ibm {
+    font-family: 'IBM Plex Serif', 'serif';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+
 
 .page {
     min-width: 1100px;
@@ -37,9 +43,10 @@ h1, h2, h3, h4, a, p, ul, li {
 .logo_place_header {
     background-image: url(../images/logo_place_header.svg);
     position: absolute;
+    left:64px;
+    top:30px;
     width: 183px;
     height: 32px;
-    margin: 30px 64px auto;
     z-index: 99;
 }
 
@@ -171,6 +178,7 @@ h1, h2, h3, h4, a, p, ul, li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 
 }
 
@@ -235,7 +243,6 @@ h1, h2, h3, h4, a, p, ul, li {
     font-size: 36px;
     line-height: 51px;
 
-
 }
 
 .feynman__image {
@@ -285,18 +292,14 @@ h1, h2, h3, h4, a, p, ul, li {
 }
 
 .table_theme_dark {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    flex-wrap: wrap;
-    width: 80%;
+    
     justify-content: space-between;
     z-index: 3;
     margin: 0 auto 90px;
 
 }
 
-.cell_theme_dark {
+.table__cell_theme_dark {
     margin: 80px 0px 0px;
     width: 200px;
     color: white;
@@ -306,18 +309,15 @@ h1, h2, h3, h4, a, p, ul, li {
 
 }
 
-.heading_theme_dark {
+.table__heading_theme_dark {
 
     margin: 0px 0px 20px;
-    font-size: 24px;
-    line-height: 1.15;
+    
 }
 
-.text_theme_dark {
+.table__text_theme_dark {
     margin: 0 auto 0px;
-    font-size: 18px;
-    line-height: 1.2;
-
+        
 }
 
 .kaufman__triangle {
@@ -334,22 +334,20 @@ h1, h2, h3, h4, a, p, ul, li {
 /* footer */
 
 .footer {
-    
+    display: flex;
     min-height: 350px;
     background-color: #1f1f1f;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 60px 40px; 
+    
 }
 
 
 .footer__columns {
-    
     display: flex;
     flex-direction: row;
     position: relative;
     width: 90%;
     justify-content: space-between;
+    margin: 60px auto 40px;
     
 
 }
