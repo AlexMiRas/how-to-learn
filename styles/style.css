@@ -376,7 +376,7 @@ h1, h2, h3, h4, a, p, ul, li {
     color: white;
 }
 
-.footer__column_info {
+.footer__column_content_info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
