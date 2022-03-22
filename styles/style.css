@@ -8,6 +8,15 @@ h1, h2, h3, h4, a, p, ul, li {
     text-decoration: none;
 }
 
+.all-link:hover {
+    transition: 0.35s;
+    opacity: 0,4;
+}
+
+.rotation{
+    
+}
+
 .page {
     min-width: 1100px;
     max-width: 1600px;
@@ -439,4 +448,3 @@ h1, h2, h3, h4, a, p, ul, li {
 .background__grey {
     background-color: #f2f2f2;
 }
-
