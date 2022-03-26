@@ -1,7 +1,5 @@
-.table_theme_dark {
-    
+.table_theme_dark {    
     justify-content: space-between;
     z-index: 3;
     margin: 0 auto 0px;
-
 }

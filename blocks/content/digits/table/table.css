@@ -1,10 +1,11 @@
-.table {
-    
+.table {    
     width: 1100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }

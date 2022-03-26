@@ -1,9 +1,9 @@
-.video__iframe{
-    margin: -100px 0px -60px;
-    
+.video__iframe{    
+    padding:0;
+    list-style-type: none;
+    width:515px;
+    height:316px;    
 }
-
 .video__iframe:first-of-type{
     margin-right: 20px;
-    
 }

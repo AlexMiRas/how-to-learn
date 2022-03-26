@@ -1,0 +1,9 @@
+.all-link {
+    color: #2f80ed;
+    text-decoration: none;
+}
+
+.all-link:hover {
+    opacity: 0.4;
+    transition: 0.35s;
+}

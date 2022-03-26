@@ -1,6 +1,18 @@
+/* подключаем normalize */
+
+@import url(../vendor/normalize.css);
+
 /*общие для page */
 
 @import url(../blocks/page/page.css);
+
+/* подключение свойств ссылок */
+
+@import url(../blocks/all-link/all-link.css);
+
+/* подключаем rotation */
+
+@import url(../blocks/rotation/rotation.css);
 
 /* блок header */
 
@@ -10,6 +22,7 @@
 @import url(../blocks/header/__subtitle/header__subtitle.css);
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/header/__square-pic/_rotation/header__square-pic_rotation.css);
 
 /* Блок content */
 
@@ -28,9 +41,9 @@
 @import url(../blocks/content/video/__iframes/video__iframes.css);
 @import url(../blocks/content/video/__iframe/video__iframe.css);
 
-/* Секция oakli */
+/* Секция oakley */
 
-@import url(../blocks/content/oakli/oakli.css);
+@import url(../blocks/content/oakley/oakley.css);
 
 /* Секция description */
 
@@ -85,6 +98,7 @@
 @import url(../blocks/content/kaufman/table/__heading/_theme/_dark/table__heading_theme_dark.css);
 @import url(../blocks/content/kaufman/table/__text/_theme/_dark/table__text_theme_dark.css);
 @import url(../blocks/content/kaufman/__triangle/kaufman__triangle.css);
+@import url(../blocks/content/kaufman/__triangle/_rotation/kaufman__triangle_rotation.css);
 
 /* Блок resources */
 
@@ -103,7 +117,7 @@
 @import url(../blocks/footer/__column/_heading/footer__column_heading.css);
 @import url(../blocks/footer/__column/_links/footer__column_links.css);
 @import url(../blocks/footer/__column/_list/footer__column_list.css);
-@import url(../blocks/footer/__column/_list/_paragraph/footer__column-list-paragraph.css);
+@import url(../blocks/footer/__column/footer__column-item.css);
 @import url(../blocks/footer/__column/_content/_social/footer__column_content_social.css);
 @import url(../blocks/footer/__column/_link/footer__column-link.css);
 @import url(../blocks/footer/__social/_icon/footer__social_icon.css);

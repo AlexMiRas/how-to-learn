@@ -5,5 +5,7 @@
     position: absolute;
     width: 765px;
     height: 608px;
+    object-fit: contain;
+    object-position:right;
     
 }
