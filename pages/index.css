@@ -38,13 +38,13 @@
 
 @import url(../blocks/section-title/section-title.css);
 
-@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+@import url(../blocks/section-title/_theme/section-title_theme.css);
 
 /* Блок sub-title */
 
 @import url(../blocks/section-subtitle/section-subtitle.css);
 
-@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme.css);
 
 /* Блок table */
 
@@ -67,6 +67,8 @@
 /* Секция techniques */
 
 @import url(../blocks/techniques/techniques.css);
+
+/* Секция cards */
 
 @import url(../blocks/cards/cards.css);
 
