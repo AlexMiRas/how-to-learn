@@ -2,7 +2,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: flex-start;
     margin: 0 auto;
     padding: 90px 0px;
     overflow: hidden;
