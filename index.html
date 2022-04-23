@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <!-- Название всего проекта -->
@@ -12,11 +13,13 @@
   <meta name="author" content="Алексей Рассказов">
   <meta name="keywords" content="html, css, javascript">
 </head>
+
 <body>
   <div class="page">
     <!-- Блок Header  -->
     <header class="header">
-      <div class="logo logo_place_header"></div>
+      <div class="logo logo_place_header"><img src="./images/logo_place_header.svg"
+          alt="логотип компании Яндекс Практикум"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете
@@ -54,7 +57,7 @@
         </article>
       </section>
       <!-- Блок к techniques-->
-      <section class="к techniques">
+      <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <ul class="cards">
@@ -99,10 +102,8 @@
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех кто любит прокрастинировать</p>
         <ul class="video__iframes">
-          <li class="video__iframe"><iframe width="515" height="316"
-            src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe></li>
-          <li class="video__iframe"><iframe width="515" height="316"
-            src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe></li>
+          <li><iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe></li>
+          <li><iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe></li>
         </ul>
       </section>
       <!-- Блок к oakley -->
@@ -243,11 +244,11 @@
           <li><a href="#" class="all-link" target="_blank"><img src="./images/resources-arzamas.svg"
                 class="resources__logo" alt="Логотип компании Арзамас"></a></li>
           <li><a href="#" class="all-link" target="_blank"><img src="./images/resources-n1.svg"
-              class="resources__logo all-link" alt="Логотип компании Н1"></a></li>
+                class="resources__logo all-link" alt="Логотип компании Н1"></a></li>
           <li><a href="#" class="all-link" target="_blank"><img src="./images/resources-strelka.svg"
-              class="resources__logo all-link" alt="Логотип компании Стрелка"></a></li>
+                class="resources__logo all-link" alt="Логотип компании Стрелка"></a></li>
           <li><a href="#" class="all-link" target="_blank"><img src="./images/resources-polka.svg"
-              class="resources__logo all-link" alt="Логотип компании Полка"></a></li>
+                class="resources__logo all-link" alt="Логотип компании Полка"></a></li>
         </ul>
       </section>
     </main>
@@ -255,7 +256,8 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <div class="logo logo_place_footer"></div>
+          <div class="logo logo_place_footer"><img src="./images/logo_place_footer.svg"
+              alt="Логотип компании ЯндексПрактикум"></div>
           <p class="footer__author"> &copy; 2022 Алексей Рассказов</p>
         </div>
         <div class="footer__column footer__column_content_info">
@@ -294,4 +296,5 @@
     </footer>
   </div>
 </body>
+
 </html>
